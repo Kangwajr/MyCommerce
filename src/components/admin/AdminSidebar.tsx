@@ -1,17 +1,20 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {
   LayoutDashboard,
   ShoppingBag,
   Users,
   Settings,
-  BarChart
+  BarChart,
+  Package,
+  ClipboardList
 } from 'lucide-react';
 
 const navItems = [
   { icon: LayoutDashboard, label: 'Dashboard', path: '/admin' },
   { icon: BarChart, label: 'Analytics', path: '/admin/analytics' },
   { icon: ShoppingBag, label: 'Products', path: '/admin/products' },
+  { icon: Package, label: 'Inventory', path: '/admin/inventory' },
+  { icon: ClipboardList, label: 'Orders', path: '/admin/orders' },
   { icon: Users, label: 'Customers', path: '/admin/customers' },
   { icon: Settings, label: 'Settings', path: '/admin/settings' },
 ];

@@ -1,3 +1,5 @@
+import React from 'react';
+
 export function Hero() {
   return (
     <div className="relative bg-gray-900 h-[600px] flex items-center">
@@ -10,9 +12,8 @@ export function Hero() {
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-          Discover Your Perfect Style
+          Discover Your Style
         </h1>
-        {/* <p>Shop the latest trends in fashion with our curated collection of premium products.</p> */}
         <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
           Explore our curated collection of premium fashion items that define your unique style
         </p>

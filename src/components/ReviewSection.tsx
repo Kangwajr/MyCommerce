@@ -1,3 +1,4 @@
+import React from 'react';
 import { Star } from 'lucide-react';
 
 const reviews = [
@@ -53,6 +54,5 @@ export function ReviewSection() {
         </div>
       </div>
     </section>
-    
   );
 }

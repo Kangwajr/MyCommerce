@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -8,8 +9,6 @@ import { NewArrivals } from './components/NewArrivals';
 import { AdminDashboard } from './components/admin/AdminDashboard';
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { useAuthStore } from './store/authStore';
-import { Footer } from './components/Footer';
-import FeaturesSection from './components/FeaturesSection';
 
 function StoreFront() {
   return (
@@ -19,8 +18,6 @@ function StoreFront() {
       <CategorySection />
       <NewArrivals />
       <ReviewSection />
-      <FeaturesSection/>
-      <Footer/>
     </main>
   );
 }

@@ -3,6 +3,8 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { SalesAnalytics } from './SalesAnalytics';
 import { AdminSidebar } from './AdminSidebar';
 import { ProductList } from './products/ProductList';
+import { InventoryList } from './inventory/InventoryList';
+import { OrderList } from './orders/OrderList';
 import { useAuthStore } from '../../store/authStore';
 
 export function AdminDashboard() {
@@ -17,7 +19,11 @@ export function AdminDashboard() {
           <Route index element={<SalesAnalytics />} />
           <Route path="analytics" element={<SalesAnalytics />} />
           {canManageProducts && (
-            <Route path="products" element={<ProductList />} />
+            <>
+              <Route path="products" element={<ProductList />} />
+              <Route path="inventory" element={<InventoryList />} />
+              <Route path="orders" element={<OrderList />} />
+            </>
           )}
           <Route path="*" element={<Navigate to="/admin" replace />} />
         </Routes>

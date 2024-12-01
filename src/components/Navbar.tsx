@@ -19,7 +19,7 @@ export function Navbar() {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
               <Link to="/" className="text-2xl font-bold text-indigo-600">
-                wyo Stores
+                Wyo Stores
               </Link>
             </div>
             
